@@ -1,0 +1,6 @@
+name: mistral-7b-instruct-v0.3
+hf_id: mistralai/Mistral-7B-Instruct-v0.3
+dtype: bfloat16
+n_layers: 32
+d_model: 4096
+gated: false

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and local environment
+.env
+.env.*
+
+# Data, weights, activations: downloaded or regenerated, never committed
+data/*
+!data/README.md
+outputs/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npy
+*.npz
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.toc
+# Compiled from main.tex; the submitted proposal PDF is tracked instead
+docs/proposal/main.pdf
+
+# Local archives
+*.zip
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

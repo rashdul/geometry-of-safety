@@ -1,0 +1,20 @@
+# Settings shared by all experiments.
+# Values marked TODO are not fixed by the proposal and still need a decision.
+
+seed: null                  # TODO: choose once and keep fixed across experiments
+
+data:
+  harmful: advbench         # attack evaluation and the harmful side of the contrastive pairs
+  harmless: alpaca          # harmless side of the contrastive pairs, length-matched
+  n_contrastive: null       # TODO: prompts per class used for direction extraction
+  eval_split: null          # TODO: how AdvBench is split between extraction and evaluation
+
+evaluation:
+  refusal:
+    method: null            # TODO: e.g. refusal-substring matching or a judge model
+    max_new_tokens: null    # TODO
+  mmlu:
+    n_shot: 5
+    n_tasks: 57
+  perplexity:
+    dataset: wikitext-2

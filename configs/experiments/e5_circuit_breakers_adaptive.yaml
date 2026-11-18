@@ -1,0 +1,10 @@
+# E5: Circuit Breakers + adaptive attack.
+# Implement the Representation Rerouting defense on Mistral. Test naive
+# abliteration, then the adaptive attack. Report whether refusal survives.
+name: e5_circuit_breakers_adaptive
+models: [mistral-7b-instruct-v0.3]
+defense: circuit_breakers
+attacks:
+  - naive_abliteration      # direction extracted from the undefended model
+  - adaptive_abliteration   # direction re-extracted from the defended model
+metrics: [refusal_rate]

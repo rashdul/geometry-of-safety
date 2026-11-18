@@ -1,0 +1,8 @@
+# E2: Layer sensitivity analysis.
+# Ablate one layer at a time. Plot refusal rate vs. layer index to identify the
+# load-bearing layers.
+name: e2_layer_sensitivity
+# The proposal does not name the models for E2; both are assumed.
+models: [llama-3.1-8b-instruct, mistral-7b-instruct-v0.3]
+intervention: orthogonalization   # one layer per run
+metrics: [refusal_rate]

@@ -1,0 +1,8 @@
+# E3: Direction transferability.
+# Extract the refusal direction from Llama and apply it to Mistral without
+# re-extraction. Compare the refusal reduction to Mistral's own direction.
+name: e3_direction_transfer
+source_model: llama-3.1-8b-instruct      # direction is extracted here
+target_model: mistral-7b-instruct-v0.3   # and applied here
+baseline: model_specific_direction
+metrics: [refusal_rate]

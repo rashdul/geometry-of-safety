@@ -1,0 +1,7 @@
+# E1: Baseline reproduction.
+# Apply abliteration to both models. Report refusal rate on AdvBench and MMLU
+# accuracy before and after.
+name: e1_baseline_reproduction
+models: [llama-3.1-8b-instruct, mistral-7b-instruct-v0.3]
+intervention: orthogonalization   # full abliteration, all layers
+metrics: [refusal_rate, mmlu_accuracy]

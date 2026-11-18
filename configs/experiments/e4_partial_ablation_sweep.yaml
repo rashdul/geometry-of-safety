@@ -1,0 +1,9 @@
+# E4: Partial ablation sweep.
+# Remove a fraction of the direction magnitude. Plot refusal rate and MMLU
+# accuracy jointly to show the robustness-capability curve.
+name: e4_partial_ablation_sweep
+# The proposal does not name the models for E4; both are assumed.
+models: [llama-3.1-8b-instruct, mistral-7b-instruct-v0.3]
+intervention: orthogonalization
+ablation_fractions: [0.10, 0.25, 0.50, 0.75, 1.00]
+metrics: [refusal_rate, mmlu_accuracy]
